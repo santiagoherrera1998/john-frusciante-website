@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>John Frusciante | News</title>
+    <meta
+      name="description"
+      content="John Fruscinate News. Read all the latest news about John Frusciante & Trickfinger"
+    />
+    <meta
+      name="keywords"
+      content="John Frusciante, Trickfinger, Red Hot Chili Peppers, Music, News"
+    />
+    <meta name="author" content="Santiago Herrera" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- LATO FONT FAMILY -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP CDN SOURCE -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <h1 class="navbar__logo">
+            <a href="index.html" class="navbar__logoLink">John Frusciante</a>
+          </h1>
+        </div>
+        <a href="#nav-links" class="navbar__openMenu">
+          <img class="navbar__img" src="img/menu_open.png" />
+        </a>
+        <ul id="nav-links" class="navbar__menu">
+          <li class="navbar__menuItem">
+            <a href="news.html" class="navbar__menuLink">News</a>
+          </li>
+          <li class="navbar__menuItem">
+            <a href="music.html" class="navbar__menuLink">Music</a>
+          </li>
+          <li class="navbar__menuItem">
+            <a href="videos.html" class="navbar__menuLink">Videos</a>
+          </li>
+          <li class="navbar__menuItem">
+            <a href="other-works.html" class="navbar__menuLink">Other Works</a>
+          </li>
+          <li class="navbar__menuItem">
+            <a href="#" class="navbar__closeMenu">
+              <img class="navbar__img" src="img/menu_close.png" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="headline"></div>
+
+    <ul class="news-section__breadcrumbs">
+      <li class="news-section__breadcrumbs-item">
+        <a href="index.html" class="news-section__breadcrumbs-link">Home</a>
+      </li>
+      <li class="news-section__breadcrumbs-item">
+        <a href="news.html" class="news-section__breadcrumbs-link">News</a>
+      </li>
+    </ul>
+
+    <section class="news-section">
+      <div class="news-section__container container">
+        <div class="news-section__row row">
+          <div class="news-section__col col-lg-4">
+            <div class="news-section__news-article">
+              <img src="img/news-1.jpg" alt="" class="news-section__news-img" />
+              <div class="news-section__news-title">
+                <h3
+                  class="news-section__news-title-text news-section__small-title"
+                >
+                  John introduces Maya on BBC Radio
+                </h3>
+              </div>
+              <div class="news-section__news-text">
+                <p class="news-section__news-date">September 9, 2020</p>
+                <p class="news-section__news-paragraph">
+                  John Frusciante introduced his new single Amethblowl and
+                  upcoming record Maya yesterday on the Mary Anne Hobbs Show on
+                  BBC Radio 6.
+                </p>
+                <button
+                  type="button"
+                  class="news-section__news-button"
+                  data-toggle="modal"
+                  data-target="#modal-news1"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL NEWS #1 -->
+
+          <div
+            class="modal fade"
+            id="modal-news1"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">
+                    John introduces Maya on BBC Radio
+                  </h4>
+
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/modal-news1.jpg" alt="" />
+                  <p>
+                    John Frusciante introduced his new single Amethblowl and
+                    upcoming record Maya yesterday on the Mary Anne Hobbs Show
+                    on BBC Radio 6.
+                  </p>
+                  <p>
+                    <a href="https://youtu.be/wAgy75zpMNE"> Listen now!</a>
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-close" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEWS ARTICLE #2 -->
+
+          <div class="news-section__col col-lg-4">
+            <div class="news-section__news-article">
+              <img src="img/news-2.jpg" alt="" class="news-section__news-img" />
+              <div class="news-section__news-title">
+                <h3
+                  class="news-section__news-title-text news-section__small-title"
+                >
+                  New Promotional Photos
+                </h3>
+              </div>
+              <div class="news-section__news-text">
+                <p class="news-section__news-date">August 31, 2020</p>
+                <p class="news-section__news-paragraph">
+                  New promotional photos of John Frusciante. Photography was
+                  done by Aura T-09.
+                </p>
+                <button
+                  type="button"
+                  class="news-section__news-button"
+                  data-toggle="modal"
+                  data-target="#modal-news2"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL NEWS #2 -->
+
+          <div
+            class="modal fade"
+            id="modal-news2"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">
+                    New Promotional Photos of John Frusciante
+                  </h4>
+
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="img/modal-news2.jpg"
+                    alt="Promotional Photos of John Frusciante"
+                  />
+
+                  <p>
+                    New promotional photos of John Frusciante. Photography was
+                    done by
+                    <a href="http://instagram.com/aurat09">Aura T-09</a>.
+                  </p>
+                  <div class="gallery">
+                    <a href="img/press1.jpg"><img src="img/press1.jpg" /></a>
+                    <a href="img/press1.jpg"><img src="img/press2.jpg" /></a>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-close" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEWS ARTICLE #3 -->
+
+          <div class="news-section__col col-lg-4">
+            <div class="news-section__news-article">
+              <img src="img/news-3.jpg" alt="" class="news-section__news-img" />
+              <div class="news-section__news-title">
+                <h3
+                  class="news-section__news-title-text news-section__small-title"
+                >
+                  John Picks His Bandcamp Favorites
+                </h3>
+              </div>
+              <div class="news-section__news-text">
+                <p class="news-section__news-date">July 23, 2020</p>
+                <p class="news-section__news-paragraph">
+                  John Frusciante picked his favorite Bandcamp releases and
+                  shared them with us all!
+                </p>
+                <button
+                  type="button"
+                  class="news-section__news-button"
+                  data-toggle="modal"
+                  data-target="#modal-news3"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL NEWS #3 -->
+
+          <div
+            class="modal fade"
+            id="modal-news3"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">
+                    John Frusciante Picks His Bandcamp Favorites
+                  </h4>
+
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="img/modal-news3.jpg"
+                    alt="Bandcamp Big Ups Banner Image"
+                  />
+
+                  <p>
+                    John Frusciante picked his favorite Bandcamp releases and
+                    shared them with us all!
+                  </p>
+                  <p>
+                    Unless you’ve been living under a rock for the past 20
+                    years, you’re undoubtedly aware of John Frusciante’s guitar
+                    chops. His soaring riffs and triumphant solos were pivotal
+                    in elevating the Red Hot Chili Peppers to international
+                    stardom and creative triumph, acting as the cerebral
+                    complement to Flea’s funky bass and Anthony Kiedis’
+                    nonsensical raps. There’s another, woefully-unexplored side
+                    to Frusciante aside from his work with the Peppers and as a
+                    solo artist, though—for the past 13 years, he’s been
+                    moonlighting as the electronic auteur Trickfinger,
+                    assembling rave music, ambient, acid, UK garage and more
+                    into warped, homespun soundscapes. His third album under
+                    that alias, She Smiles Because She Presses The Button,
+                    arrived last month on the Acid Test sub-label Avenue 66. It
+                    marks the culmination of his journey thus far, his
+                    meticulous attention to detail and melody reinterpreted from
+                    a digitized standpoint.
+                  </p>
+                  <p>
+                    Frusciante’s introduction to electronic music predates his
+                    career arc as a rocker; he first experienced it at age 6,
+                    when he heard Donna Summer’s “I Feel Love” on the radio. “I
+                    was very into New Wave starting when I was 9, and Eno and
+                    stuff, but Rave music really started to take off in ’92 when
+                    I was beginning a five-year drug run,” Frusciante says. “I
+                    had cut myself off from the world and wasn’t paying
+                    attention. When I got clean in 1997, I suddenly felt very
+                    drawn to anything with synths, drum machines, and breaks,
+                    and I started buying as many different kinds of recent
+                    electronic music as I could. Some standout discoveries over
+                    that next few years were Aphex Twin (Classics), 808 State
+                    (Newbuild), Komakino (Energy Trancemission), The Railway
+                    Raver (Drop Acid Not Bombs), Autechre (Tri Repetae), The
+                    Prodigy (Experience), Squarepusher (Feed Me Weird Things),
+                    and C.J. Bolland (The 4th Sign).” Though he’s technically
+                    been making electronic music since 1998, it took nearly
+                    another ten years for his endeavors to bear fruit. “It
+                    wasn’t until 2007, when the first Trickfinger stuff was
+                    made, that I found the right gear for me, and was dead set
+                    on the path of being my own engineer.”
+                  </p>
+                  <p>
+                    <a
+                      href="https://daily.bandcamp.com/big-ups/big-ups-john-frusciante-picks-his-bandcamp-favorites"
+                    >
+                      Continue to read and find out which are his favorite
+                      Bandcamp releases!</a
+                    >
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-close" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEWS ARTICLE #4 -->
+
+        <div class="news-section__row row">
+          <div class="news-section__col col-lg-8">
+            <div class="news-section__news-article">
+              <img
+                src="img/news-4-horizonal.jpg"
+                alt=""
+                class="news-section__news-img"
+              />
+              <div class="news-section__news-title">
+                <h3
+                  class="news-section__news-title-text news-section__horizontal"
+                >
+                  Q&A with Ryan Hewitt about The Will To Death
+                </h3>
+              </div>
+              <div class="news-section__news-text">
+                <p class="news-section__news-date">July 12, 2020</p>
+                <p class="news-section__news-paragraph">
+                  Ryan Hewitt (producer, mixer, engineer) recently did an Ask Me
+                  Anything on his Instagram after a fan reached out to him with
+                  questions about John Frusciante’s The Will To Death.
+                </p>
+                <button
+                  type="button"
+                  class="news-section__news-button"
+                  data-toggle="modal"
+                  data-target="#modal-news4"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL NEWS #4 -->
+
+          <div
+            class="modal fade"
+            id="modal-news4"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">
+                    Q&A with Ryan Hewitt about TWTD
+                  </h4>
+
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="img/modal-news4.jpg"
+                    alt="The Will To Death album artwork"
+                  />
+
+                  <p>
+                    Ryan Hewitt (producer, mixer, engineer) recently did an Ask
+                    Me Anything on
+                    <a href="https://www.instagram.com/p/CCWXcp0B11R/"
+                      >his Instagram</a
+                    >
+                    after a fan reached out to him with questions about John
+                    Frusciante’s The Will To Death. Ryan received a lot of
+                    questions about the recording process of the album. Below is
+                    an excerpt, find a full transcript
+                    <a
+                      href="https://www.lovefrusciante.com/press/qa-ryan-hewitt-answers-fan-questions-about-the-will-to-death/"
+                      >here!</a
+                    >
+                  </p>
+                  <p>
+                    Q: What did you use for the effects in A Doubt? Particularly
+                    the higher tone noise in the intro and the whooshing noises
+                    at around 2:00. Similarly for the whooshing noises in The
+                    Mirror. Synth? Or cymbals with heavy effects? A: Mostly John
+                    using his modular synth. It was a huge presence on his
+                    records at the time. Unlimited possibilities using that as a
+                    processor. He got super creative… Q: What was the odd piano
+                    thingy breakdown in Wishing? A: A bunch of music boxes. No I
+                    have to correct myself! I think it actually may have been a
+                    bunch of piano loops John and Josh made with guitar pedals.
+                    Q: What are the main musical and non-musical life lessons
+                    you learned from working with John? A: I could write a
+                    book!! That man is on another planet from us mere mortals…
+                    truly. I just tried to keep up most of the time.
+                  </p>
+                  <p>
+                    <a
+                      href="https://www.lovefrusciante.com/press/qa-ryan-hewitt-answers-fan-questions-about-the-will-to-death/"
+                      >Continue reading here.</a
+                    >
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-close" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEWS ARTICLE #5 -->
+
+          <div class="news-section__col col-lg-4">
+            <div class="news-section__news-article">
+              <img src="img/news-5.jpg" alt="" class="news-section__news-img" />
+              <div class="news-section__news-title">
+                <h3
+                  class="news-section__news-title-text news-section__small-title"
+                >
+                  New Unreleased Trickfinger Track!
+                </h3>
+              </div>
+              <div class="news-section__news-text">
+                <p class="news-section__news-date">July 2, 2020</p>
+                <p class="news-section__news-paragraph">
+                  Aura T-09 created a new mix for Typeless. One of the songs in
+                  the mix is an unreleased Trickfinger song called Simplicity.
+                </p>
+                <button
+                  type="button"
+                  class="news-section__news-button"
+                  data-toggle="modal"
+                  data-target="#modal-news5"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL NEWS #5 -->
+
+        <div
+          class="modal fade"
+          id="modal-news5"
+          tabindex="-1"
+          role="dialog"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLongTitle">
+                  New Unreleased Trickfinger Track!
+                </h4>
+
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img src="img/modal-news5.jpg" alt="Typeless Mix artwork" />
+
+                <p>
+                  <a href="https://www.instagram.com/aurat09/">Aura T-09</a>
+                  created a new mix for Typeless. One of the songs in the mix is
+                  an unreleased Trickfinger song called Simplicity.
+                  <a
+                    href="https://soundcloud.com/typelessrecords/typeless-mix-23-aura-t-09"
+                  >
+                    Listen to the mix here!</a
+                  >
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn-close" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEWS ARTICLE #6 -->
+
+        <div class="news-section__row row">
+          <div class="news-section__col col-lg-4">
+            <div class="news-section__news-article">
+              <img src="img/news-6.jpg" alt="" class="news-section__news-img" />
+              <div class="news-section__news-title">
+                <h3
+                  class="news-section__news-title-text news-section__small-title"
+                >
+                  New Interview with Ele-King.net
+                </h3>
+              </div>
+              <div class="news-section__news-text">
+                <p class="news-section__news-date">June 26, 2020</p>
+                <p class="news-section__news-paragraph">
+                  John Frusciante was recently interviewed by Tsuyoshi Kizu for
+                  Ele-King.net. Read the whole interview below.
+                </p>
+                <button
+                  type="button"
+                  class="news-section__news-button"
+                  data-toggle="modal"
+                  data-target="#modal-news6"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL NEWS #6 -->
+
+          <div
+            class="modal fade"
+            id="modal-news6"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">
+                    New Interview with Ele-King.net
+                  </h4>
+
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/modal-news6.jpg" alt="" />
+                  <p>
+                    John Frusciante was recently interviewed by Tsuyoshi Kizu
+                    for Ele-King.net. The interview was posted in Japanese.
+                    Below you will find a translation by Google.
+                  </p>
+                  <p>
+                    For many, even when he left the band, he would have been
+                    “Red Hot Chili Peppers (RHCP) John Frusciante”, and he’s
+                    known to be the band’s greatest masterpiece,
+                    “Californication.” He would have been a guitarist who
+                    brought lyricism. That’s why the news about the return to
+                    the band, which was announced the other day, was
+                    enthusiastically received by old fans, and as a member of
+                    the stadium band, I want to see him playing the guitar
+                    again.
+                  </p>
+
+                  <p>
+                    But the listener, who has been following his solo career,
+                    knows that Frusciante is a great electronic music maker. In
+                    the past solo works, he sometimes introduced electronic
+                    elements to guitar music, but since he used the name
+                    Trickfinger, he concentrates on pure electronic music such
+                    as Acid House and IDM. His machine music isn’t new, but it’s
+                    very neat, and the lyrical spilling from it is so tasty.
+                  </p>
+
+                  <p>
+                    His album “She Smiles Because She Presses The Button”, which
+                    is the first Trickfinger in three years, also shows his
+                    strengths well. There is an IDM like early outing, there are
+                    tracks with jungle elements popping out along the way, and
+                    there is a melodious acid house. You can hear that each of
+                    them is very carefully made. Rhythm patterns and detailed
+                    arrangements of sounds are more sophisticated than they have
+                    ever been, and as I say, they are the result of constant
+                    efforts. As a guitarist and producer of electronic music,
+                    his overly stoic attitude has created his personality.
+                  </p>
+                  <p>
+                    Even so, academic considerations for the maniac Good and
+                    music to the machine, not stop and speaks while the …… etc
+                    affection (especially endless respect for Autechre) to the
+                    electronic music, is exhibited his charming music geek first
+                    time It became an interview. As you can see in the text,
+                    after this work, there is also a solo album (according to
+                    himself) that is closer to the jungle, so I would like to
+                    look forward to not only RHCP activities but also those.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-close" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEWS ARTICLE #7 -->
+
+          <div class="news-section__col col-lg-8">
+            <div class="news-section__news-article">
+              <img
+                src="img/news-7-horizonal.jpg"
+                alt=""
+                class="news-section__news-img"
+              />
+              <div class="news-section__news-title">
+                <h3
+                  class="news-section__news-title-text news-section__horizontal"
+                >
+                  <span class="text-danger"> CANCELLED: </span>John Frusciante
+                  Dublab Shows
+                </h3>
+              </div>
+              <div class="news-section__news-text">
+                <p class="news-section__news-date">June 22, 2020</p>
+                <p class="news-section__news-paragraph">
+                  Unfortunately John has decided to no longer move forward with
+                  his own Dublab show. He has a lot of work in progress for the
+                  Chili Peppers and has decided he wants to solely devote his
+                  time and energy on that.
+                </p>
+                <button
+                  type="button"
+                  class="news-section__news-button"
+                  data-toggle="modal"
+                  data-target="#modal-news7"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL NEWS #7 -->
+
+          <div
+            class="modal fade"
+            id="modal-news7"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="exampleModalLongTitle">
+                    CANCELLED: John Frusciante Dublab Shows
+                  </h4>
+
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/modal-news7.jpg" alt="" />
+                  <p>
+                    Unfortunately John has decided to no longer move forward
+                    with his own Dublab show. He has a lot of work in progress
+                    for the Chili Peppers and has decided he wants to solely
+                    devote his time and energy on that. He might do a show every
+                    now and then but for now, all shows that were scheduled for
+                    John every fourth Saturday of the month are cancelled. That
+                    includes the show that was scheduled for this Saturday.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-close" data-dismiss="modal">
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center" data-aos="fade-in" data-aos-duration="1500">
+      <button
+        type="button"
+        class="btn-black"
+        data-toggle="modal"
+        data-target="#modal-news"
+      >
+        LOAD MORE
+      </button>
+    </div>
+
+    <div
+      class="modal fade"
+      id="modal-news"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLongTitle">
+              We are sorry!
+            </h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            There's no more news to load at the moment. Sorry for the
+            inconvenience.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-close" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top row">
+          <div class="footer__links-list col-12 col-md-6">
+            <ul class="footer__links-menu">
+              <li class="footer__link-item">About</li>
+              <li class="footer__link-item">Contact</li>
+              <li class="footer__link-item">Terms & Conditions</li>
+              <li class="footer__link-item">Privacy Policy</li>
+            </ul>
+          </div>
+
+          <div class="footer__newsletter col-12 col-md-6">
+            <h3 class="footer__newsletter-title">Get Email Updates</h3>
+
+            <form action="index.html" class="footer__form">
+              <label for="email" class="footer__form-email">
+                Email Address
+                <span aria-hidden="true" class="footer__required">*</span>
+              </label>
+              <input
+                class="footer__newsletter-email"
+                type="text"
+                name="email"
+                placeholder="example@address.com"
+                required
+              />
+
+              <label for="country" class="footer__form-country">
+                Country
+                <span aria-hidden="true" class="footer__required">*</span>
+              </label>
+              <select
+                name="country"
+                class="footer__newsletter-country"
+                required
+              >
+                <option value="US" class="footer__form-option">
+                  United States
+                </option>
+                <option value="CA" class="footer__form-option">Canada</option>
+                <option value="GB" class="footer__form-option">
+                  United Kingdom
+                </option>
+                <option value="AR" class="footer__form-option">
+                  Argentina
+                </option>
+              </select>
+
+              <div class="footer__newsletter-actions">
+                <input
+                  class="footer__btn btn-black"
+                  type="submit"
+                  value="Subscribe"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer__bottom row">
+          <div class="footer__copyright col-12 col-md-6">
+            <p class="footer__paragraph">
+              ©2020 John Frusciante. All Rights Reserved.
+            </p>
+          </div>
+
+          <div class="footer__social-links col-12 col-md-6">
+            <ul class="footer__social-menu">
+              <li class="footer__social-menu-item">
+                <a
+                  href="https://www.facebook.com/Johnfrusciante/"
+                  class="footer__social-menu-item"
+                  ><img src="img/social_facebook.png" class="footer__img"
+                /></a>
+              </li>
+              <li class="footer__social-menu-item">
+                <a
+                  href="https://twitter.com/johnfrusciante"
+                  class="footer__link"
+                  ><img src="img/social_twitter.png" class="footer__img"
+                /></a>
+              </li>
+
+              <li class="footer__social-menu-item">
+                <a
+                  href="https://open.spotify.com/artist/7rN3Agir6FaZNfhf5V7mfN"
+                  class="footer__link"
+                  ><img src="img/social_spotify.png" class="footer__img" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

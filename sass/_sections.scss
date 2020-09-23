@@ -1,0 +1,395 @@
+// File: _sections.scss
+
+html {
+  text-size-adjust: none;
+  text-size-adjust: auto;
+
+  /* <percentage> value */
+  text-size-adjust: 80%;
+
+  /* Global values */
+  text-size-adjust: inherit;
+  text-size-adjust: initial;
+  text-size-adjust: unset;
+}
+
+section {
+  margin: auto;
+}
+
+/* NEWS SECTION */
+
+.news-section {
+  &__container {
+    max-width: 90%;
+    padding: 0;
+
+    @include for-tablet-portrait {
+      max-width: 100%;
+    }
+  }
+
+  &__row {
+    margin: 0;
+  }
+
+  &__col {
+    img {
+      width: 100%;
+    }
+
+    @include for-mobile {
+      padding: 0px;
+    }
+  }
+
+  &__news-img {
+    height: auto;
+  }
+
+  &__breadcrumbs {
+    font-size: $paragraph;
+    font-weight: 600;
+    margin-left: 9rem;
+    margin-bottom: $marginBottom;
+
+    @include for-tablet-portrait {
+      margin-left: 1.5rem;
+    }
+
+    &-item {
+      display: inline-block;
+      padding-right: 1rem;
+
+      &:not(:first-child)::before {
+        content: "";
+        display: inline-block;
+        background: url("../img/breadcrums.png") no-repeat;
+        background-size: contain;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__news-article {
+    color: $white;
+    margin-bottom: $marginBottom;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__news-title-text {
+    @include text-shadow;
+    font-size: 2.1vw;
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 48%;
+
+    @include for-tablet-portrait {
+      font-size: 5vw;
+      width: 50%;
+    }
+  }
+
+  &__small-title {
+    @include text-shadow;
+    top: 15%;
+    width: 85%;
+  }
+
+  &__horizontal {
+    width: 55%;
+
+    @include for-tablet-portrait {
+      top: 20%;
+      width: 85%;
+    }
+  }
+
+  &__news-date {
+    border-bottom: 1px solid $white;
+    display: inline-block;
+    font-size: 1.3rem;
+    padding-bottom: 3px;
+  }
+
+  &__news-text {
+    background-color: rgba(0, 0, 0, 0.377);
+    font-size: 1.4rem;
+    padding: 1rem;
+    position: absolute;
+    bottom: -12%;
+    left: 0;
+    transition: 0.5s;
+    width: 100%;
+    z-index: 1;
+
+    @include for-tablet-portrait {
+      bottom: 0%;
+    }
+  }
+
+  &__news-paragraph {
+    @include for-mobile {
+      overflow: hidden;
+      display: none;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  &__news-button {
+    background: none;
+    color: $white;
+    font-weight: $semi-bold;
+    padding: 3px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__news-article:hover &__news-text {
+    bottom: 0px;
+  }
+}
+
+/* STORE SECTION */
+
+.store-section {
+  color: $white;
+  position: relative;
+  text-align: center;
+
+  &__container {
+    max-width: 90%;
+
+    @include for-tablet-portrait {
+      max-width: 100%;
+    }
+  }
+
+  &__item-img {
+    margin-bottom: $marginBottom;
+    width: 100%;
+  }
+
+  &__store-item {
+    @include for-mobile {
+      padding: 0px;
+    }
+  }
+
+  &__item-title {
+    font-size: 2vw;
+    font-weight: $bold;
+    position: absolute;
+    top: 12.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+
+    @include for-tablet-portrait {
+      font-size: 4.5vw;
+    }
+    @include for-mobile {
+      font-size: 8vw;
+      top: 15%;
+    }
+  }
+
+  &__item-subtitle {
+    font-size: 1vw;
+    position: absolute;
+    top: 5.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include for-tablet-portrait {
+      top: 6.5%;
+      font-size: 2.4vw;
+
+      @include for-mobile {
+        font-size: 4vw;
+      }
+    }
+  }
+
+  &__item-link {
+    border-bottom: 2px solid $white;
+    color: $white;
+    font-size: 1vw;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:hover {
+      color: $white;
+    }
+
+    @include for-tablet-portrait {
+      font-size: 2.4vw;
+      top: 19%;
+    }
+    @include for-mobile {
+      font-size: 4vw;
+      top: 25%;
+    }
+  }
+}
+
+/* MUSIC */
+
+.music-section {
+  margin: auto;
+  width: 80%;
+
+  &__breadcrumbs {
+    font-size: $paragraph;
+    font-weight: 600;
+    margin-left: 7px;
+
+    &-item {
+      display: inline-block;
+      padding-right: 1rem;
+
+      &:not(:first-child)::before {
+        content: "";
+        display: inline-block;
+        background: url("../img/breadcrums.png") no-repeat;
+        background-size: contain;
+        width: 1rem;
+        height: 1rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__breadcrumbs-link:hover {
+    color: initial;
+  }
+
+  &__title {
+    font-size: $title;
+    margin: 20px 7px;
+  }
+
+  &__album-title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  &__album-year {
+    font-size: 1.3rem;
+    font-weight: $thin;
+    margin: 5px 0 15px 0;
+  }
+
+  &__artwork {
+    margin: 5px 7px;
+    text-align: center;
+    transition: 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__artwork-img {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+}
+
+/* PROMOTIONAL */
+
+.promotional-section {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(2, 2, 2, 0.055),
+      rgba(5, 5, 5, 0.562)
+    ),
+    url("../img/enclosure-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  color: $white;
+  padding: 15% 1rem;
+
+  &__title {
+    font-size: 3.5rem;
+    margin-bottom: $marginBottom;
+  }
+
+  &__text {
+    font-size: 2.3rem;
+    font-weight: $thin;
+    margin-bottom: $marginBottom;
+    max-width: 95%;
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: $marginBottom;
+    transition: 0.5s;
+
+    &:hover {
+      transform: translateY(-8px);
+    }
+  }
+
+  &__link {
+    border-bottom: 1px solid $white;
+    color: $white;
+    font-size: 2.3rem;
+    font-weight: $thin;
+    transition: 0.5s;
+
+    &:hover {
+      color: #e93a3a;
+      border-color: #e93a3a;
+    }
+  }
+}
+
+/* VIDEOS */
+
+.music-section {
+  &__videos-container {
+    padding: 25px 0;
+    margin: auto;
+  }
+
+  &__video-title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 90%;
+    display: block;
+    overflow: hidden;
+  }
+
+  &__video-date {
+    font-size: $date;
+    margin-bottom: 5px;
+  }
+
+  @include for-tablet-portrait {
+    &__video-info {
+      display: none;
+    }
+  }
+}

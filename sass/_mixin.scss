@@ -1,0 +1,39 @@
+// File: _mixin.scss
+
+/* FLEXBOX */
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* SHADOWS */
+
+@mixin text-shadow {
+  -webkit-text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  -moz-text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* MEDIA QUERIES */
+
+@mixin for-mobile {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin for-small-tablet-portrait {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait {
+  @media only screen and (max-width: 992px) {
+    @content;
+  }
+}
