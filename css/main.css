@@ -146,7 +146,7 @@ section {
 .news-section__breadcrumbs-item:not(:first-child)::before {
   content: "";
   display: inline-block;
-  background: url("../img/breadcrums.png") no-repeat;
+  background: url("../img/icons/breadcrums.png") no-repeat;
   background-size: contain;
   width: 1rem;
   height: 1rem;
@@ -203,7 +203,7 @@ section {
   font-size: 1.4rem;
   padding: 1rem;
   position: absolute;
-  bottom: -12%;
+  bottom: -7.5%;
   left: 0;
   transition: 0.5s;
   width: 100%;
@@ -211,6 +211,14 @@ section {
 }
 @media only screen and (max-width: 992px) {
   .news-section__news-text {
+    bottom: 0%;
+  }
+}
+.news-section__news-text--small {
+  bottom: -12%;
+}
+@media only screen and (max-width: 992px) {
+  .news-section__news-text--small {
     bottom: 0%;
   }
 }
@@ -234,6 +242,24 @@ section {
 }
 .news-section__news-article:hover .news-section__news-text {
   bottom: 0px;
+}
+
+.load-news__modal-body {
+  font-size: 1.7rem;
+  margin: 1.5rem;
+  font-weight: 400;
+}
+.load-news__modal-dialog {
+  width: 80vw;
+}
+.load-news:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+}
+.load-news__footer {
+  margin-top: 5px;
 }
 
 /* STORE SECTION */
@@ -339,7 +365,7 @@ section {
 .music-section__breadcrumbs-item:not(:first-child)::before {
   content: "";
   display: inline-block;
-  background: url("../img/breadcrums.png") no-repeat;
+  background: url("../img/icons/breadcrums.png") no-repeat;
   background-size: contain;
   width: 1rem;
   height: 1rem;
@@ -382,7 +408,7 @@ section {
 
 /* PROMOTIONAL */
 .promotional-section {
-  background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.055), rgba(5, 5, 5, 0.562)), url("../img/enclosure-banner.jpg");
+  background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.055), rgba(5, 5, 5, 0.562)), url("../img/banners/enclosure-banner.jpg");
   background-position: center;
   background-size: cover;
   color: #f7f7f7;
@@ -504,6 +530,25 @@ hr {
   margin-bottom: 20px;
 }
 
+/* BOOSTRAP */
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
 /* SITEWIDE */
 header {
   background: rgba(255, 255, 255, 0.5);
@@ -596,13 +641,13 @@ header {
   width: 100%;
   height: 70vh;
   margin-bottom: 3rem;
-  background-image: url("../img/headline.jpg");
+  background-image: url("../img/banners/headline.jpg");
   background-size: cover;
   background-position: center;
 }
 @media only screen and (max-width: 768px) {
   .headline {
-    background-image: url("../img/headline-phone.jpg");
+    background-image: url("../img/banners/headline-phone.jpg");
     background-position: top center;
     height: 100vh;
   }
@@ -726,7 +771,6 @@ header {
 
 .modal-title {
   font-size: 2.3rem;
-  font-weight: 700;
   margin: 10px;
   text-align: center;
 }
@@ -795,7 +839,7 @@ header {
 
 /* VIDEOS */
 .headline-videos-background {
-  background-image: url("../img/headline-videos.jpg");
+  background-image: url("../img/banners/headline-videos.jpg");
   background-position: center center;
   background-size: cover;
   color: #f7f7f7;

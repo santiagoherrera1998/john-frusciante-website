@@ -64,7 +64,7 @@ section {
       &:not(:first-child)::before {
         content: "";
         display: inline-block;
-        background: url("../img/breadcrums.png") no-repeat;
+        background: url("../img/icons/breadcrums.png") no-repeat;
         background-size: contain;
         width: 1rem;
         height: 1rem;
@@ -123,12 +123,19 @@ section {
     font-size: 1.4rem;
     padding: 1rem;
     position: absolute;
-    bottom: -12%;
+    bottom: -7.5%;
     left: 0;
     transition: 0.5s;
     width: 100%;
     z-index: 1;
 
+    @include for-tablet-portrait {
+      bottom: 0%;
+    }
+  }
+
+  &__news-text--small {
+    bottom: -12%;
     @include for-tablet-portrait {
       bottom: 0%;
     }
@@ -157,6 +164,29 @@ section {
 
   &__news-article:hover &__news-text {
     bottom: 0px;
+  }
+}
+
+.load-news {
+  &__modal-body {
+    font-size: $paragraph;
+    margin: 1.5rem;
+    font-weight: 400;
+  }
+
+  &__modal-dialog {
+    width: 80vw;
+  }
+
+  &:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+
+  &__footer {
+    margin-top: 5px;
   }
 }
 
@@ -263,7 +293,7 @@ section {
       &:not(:first-child)::before {
         content: "";
         display: inline-block;
-        background: url("../img/breadcrums.png") no-repeat;
+        background: url("../img/icons/breadcrums.png") no-repeat;
         background-size: contain;
         width: 1rem;
         height: 1rem;
@@ -322,7 +352,7 @@ section {
       rgba(2, 2, 2, 0.055),
       rgba(5, 5, 5, 0.562)
     ),
-    url("../img/enclosure-banner.jpg");
+    url("../img/banners/enclosure-banner.jpg");
   background-position: center;
   background-size: cover;
   color: $white;
