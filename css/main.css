@@ -152,12 +152,6 @@ section {
   height: 1rem;
   margin-right: 1rem;
 }
-.news-section__news-article {
-  color: #f7f7f7;
-  margin-bottom: 3rem;
-  overflow: hidden;
-  position: relative;
-}
 .news-section__news-title-text {
   -webkit-text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
   -moz-text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
@@ -172,7 +166,7 @@ section {
 }
 @media only screen and (max-width: 992px) {
   .news-section__news-title-text {
-    font-size: 5vw;
+    font-size: 7.5vw;
     width: 50%;
   }
 }
@@ -223,6 +217,18 @@ section {
   }
 }
 @media only screen and (max-width: 480px) {
+  .news-section__news-text--small {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.news-section__news-article {
+  color: #f7f7f7;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  position: relative;
+}
+@media only screen and (max-width: 480px) {
   .news-section__news-paragraph {
     overflow: hidden;
     display: none;
@@ -233,12 +239,20 @@ section {
 .news-section__news-button {
   background: none;
   color: #f7f7f7;
+  display: block;
   font-weight: 700;
   padding: 3px;
   text-transform: uppercase;
 }
 .news-section__news-button:hover {
   color: #f7f7f7;
+}
+@media only screen and (max-width: 480px) {
+  .news-section__news-button {
+    border: 1px solid #f7f7f7;
+    border-radius: 2px;
+    padding: 5px 10%;
+  }
 }
 .news-section__news-article:hover .news-section__news-text {
   bottom: 0px;
@@ -248,6 +262,9 @@ section {
   font-size: 1.7rem;
   margin: 1.5rem;
   font-weight: 400;
+}
+.load-news__btn-close-tab {
+  display: none;
 }
 .load-news__modal-dialog {
   width: 80vw;

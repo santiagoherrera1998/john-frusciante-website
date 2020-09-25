@@ -73,13 +73,6 @@ section {
     }
   }
 
-  &__news-article {
-    color: $white;
-    margin-bottom: $marginBottom;
-    overflow: hidden;
-    position: relative;
-  }
-
   &__news-title-text {
     @include text-shadow;
     font-size: 2.1vw;
@@ -91,7 +84,7 @@ section {
     width: 48%;
 
     @include for-tablet-portrait {
-      font-size: 5vw;
+      font-size: 7.5vw;
       width: 50%;
     }
   }
@@ -139,6 +132,17 @@ section {
     @include for-tablet-portrait {
       bottom: 0%;
     }
+    @include for-mobile {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__news-article {
+    color: $white;
+    margin-bottom: $marginBottom;
+    overflow: hidden;
+    position: relative;
   }
 
   &__news-paragraph {
@@ -153,12 +157,19 @@ section {
   &__news-button {
     background: none;
     color: $white;
+    display: block;
     font-weight: $semi-bold;
     padding: 3px;
     text-transform: uppercase;
 
     &:hover {
       color: $white;
+    }
+
+    @include for-mobile {
+      border: 1px solid $white;
+      border-radius: 2px;
+      padding: 5px 10%;
     }
   }
 
@@ -172,6 +183,10 @@ section {
     font-size: $paragraph;
     margin: 1.5rem;
     font-weight: 400;
+  }
+
+  &__btn-close-tab {
+    display: none;
   }
 
   &__modal-dialog {
