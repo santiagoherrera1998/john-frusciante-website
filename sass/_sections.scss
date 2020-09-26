@@ -1,18 +1,5 @@
 // File: _sections.scss
 
-html {
-  text-size-adjust: none;
-  text-size-adjust: auto;
-
-  /* <percentage> value */
-  text-size-adjust: 80%;
-
-  /* Global values */
-  text-size-adjust: inherit;
-  text-size-adjust: initial;
-  text-size-adjust: unset;
-}
-
 section {
   margin: auto;
 }
@@ -37,14 +24,18 @@ section {
     img {
       width: 100%;
     }
-
     @include for-mobile {
       padding: 0px;
     }
   }
 
-  &__news-img {
-    height: auto;
+  &__horizontal {
+    width: 55%;
+
+    @include for-tablet-portrait {
+      top: 20%;
+      width: 85%;
+    }
   }
 
   &__breadcrumbs {
@@ -73,6 +64,10 @@ section {
     }
   }
 
+  &__news-img {
+    height: auto;
+  }
+
   &__news-title-text {
     @include text-shadow;
     font-size: 2.1vw;
@@ -85,7 +80,7 @@ section {
 
     @include for-tablet-portrait {
       font-size: 7.5vw;
-      width: 50%;
+      width: 90%;
     }
   }
 
@@ -93,15 +88,6 @@ section {
     @include text-shadow;
     top: 15%;
     width: 85%;
-  }
-
-  &__horizontal {
-    width: 55%;
-
-    @include for-tablet-portrait {
-      top: 20%;
-      width: 85%;
-    }
   }
 
   &__news-date {
@@ -125,6 +111,12 @@ section {
     @include for-tablet-portrait {
       bottom: 0%;
     }
+
+    @include for-mobile {
+      @include flexbox;
+      bottom: 0%;
+      justify-content: space-between;
+    }
   }
 
   &__news-text--small {
@@ -133,7 +125,7 @@ section {
       bottom: 0%;
     }
     @include for-mobile {
-      display: flex;
+      @include flexbox;
       justify-content: space-between;
     }
   }
@@ -143,6 +135,23 @@ section {
     margin-bottom: $marginBottom;
     overflow: hidden;
     position: relative;
+  }
+
+  &__news-article:hover &__news-text {
+    bottom: 0px;
+  }
+
+  &__news-article--horizontal {
+    @include for-tablet-portrait {
+      display: none;
+    }
+  }
+
+  &__news-article--square {
+    display: none;
+    @include for-tablet-portrait {
+      display: block;
+    }
   }
 
   &__news-paragraph {
@@ -173,8 +182,52 @@ section {
     }
   }
 
-  &__news-article:hover &__news-text {
-    bottom: 0px;
+  &__modal-span {
+    @include for-tablet-portrait {
+      display: none;
+    }
+  }
+
+  &__modal-dialog {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 750px;
+
+    @include for-tablet-portrait {
+      max-width: 85vw;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__modal-title {
+    font-size: 2.3rem;
+    margin: 10px;
+    text-align: center;
+  }
+
+  &__modal-body {
+    padding: 0px;
+
+    img {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: $paragraph;
+      font-weight: 400;
+      padding: 0 20px 5px 20px;
+    }
+  }
+
+  &__modal-gallery {
+    @include flexbox;
+
+    @include for-tablet-portrait {
+      display: block;
+      margin: 0 15px;
+    }
   }
 }
 
@@ -191,13 +244,6 @@ section {
 
   &__modal-dialog {
     width: 80vw;
-  }
-
-  &:before {
-    display: inline-block;
-    vertical-align: middle;
-    content: " ";
-    height: 100%;
   }
 
   &__footer {
@@ -296,6 +342,18 @@ section {
   margin: auto;
   width: 80%;
 
+  @include for-tablet-portrait {
+    width: 90%;
+  }
+
+  &__main {
+    max-width: 100%;
+  }
+
+  &__col {
+    padding: 0px;
+  }
+
   &__breadcrumbs {
     font-size: $paragraph;
     font-weight: 600;
@@ -319,6 +377,10 @@ section {
 
   &__breadcrumbs-link:hover {
     color: initial;
+  }
+
+  &__img {
+    width: 100%;
   }
 
   &__title {
@@ -435,6 +497,70 @@ section {
   @include for-tablet-portrait {
     &__video-info {
       display: none;
+    }
+  }
+}
+
+/* VIDEOS */
+
+.headline-videos-background {
+  background-image: url("../img/banners/headline-videos.jpg");
+  background-position: center center;
+  background-size: cover;
+  color: $white;
+  height: 70vh;
+  margin-bottom: $marginBottom;
+  width: 100%;
+  @include for-small-tablet-portrait {
+    display: none;
+  }
+}
+
+.headline--no-display {
+  display: none;
+  @include for-small-tablet-portrait {
+    display: block;
+  }
+}
+
+.headline-videos {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding-top: 7%;
+
+  @include for-tablet-portrait {
+    grid-template-columns: none;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: $thin;
+    width: 70%;
+  }
+}
+
+.headline-youtube {
+  justify-self: end;
+  width: 560px;
+  height: 315px;
+
+  @include for-tablet-portrait {
+    margin: auto;
+    height: 360px;
+    width: 80%;
+  }
+
+  .iframe {
+    width: 560px;
+    height: 315px;
+    padding-right: 40px;
+
+    @include for-tablet-portrait {
+      width: 100%;
+      height: 100%;
+      margin-top: 40px;
+      padding: 0;
+      margin: auto;
     }
   }
 }
